@@ -1,0 +1,13 @@
+{
+  "name": "tiktok-backend",
+  "version": "1.0.0",
+  "description": "Epic Tiktok backend",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node sever.js"
+  },
+  "author": "Musa Zidan Modibbo",
+  "license": "ISC"
+}

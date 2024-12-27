@@ -1,0 +1,26 @@
+npm i -g nodemon 
+nodemon server.js 
+
+import express from 'express';
+import mangoose from 'mongoose';
+
+//app config
+const app = express();
+const port = 9000;
+
+//middlewares
+
+//DB config
+
+//api endpoints
+app.get ('/', (req,res) => res.status(200).send("helloworld"));
+
+//listen
+app.listen(port, ()=>console.log(`listening on localhost: ${port}`));
+
+
+zidan - My1xptsozRDxR94J wm5Nu@xxUFy9Q24
+
+mongodb+srv://zidan:<db_password>@cluster0.bd2jh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+mongodb+srv://zidan:<db_password>@cluster0.bd2jh.mongodb.net/<db_name>?retryWrites=true&w=majority&appName=Cluster0
+
