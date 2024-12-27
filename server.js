@@ -11,9 +11,9 @@ const port = 9000;
 
 //middlewares
 app.use(express.json());
-app.use((req,res, next)=> {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Headers','*');
+app.use((req, res, next)=> {
+    res.setHeader('Access-Control-Allow-Origin', '*'),
+    res.setHeader('Access-Control-Allow-Headers', '*'),
     next();
 });
 
