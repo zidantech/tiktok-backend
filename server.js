@@ -31,7 +31,7 @@ app.get ('/', (req, res) => res.status(200).send("helloworld"));
 app.get('/v1/posts', (req, res) => res.status(200).send(data));
 
 app.get('/v2/posts', (req, res) => {
-    Videos.find()
+  Videos.find()
         .then((data) => {
             res.status(200).send(data);
         })
@@ -42,7 +42,7 @@ app.get('/v2/posts', (req, res) => {
 
 app.post('/v2/posts', async (req, res) => {
     // POST request to add data to the database
-    // const dbVideos = req.body;
+    const dbVideos = req.body;
 
     try {
       const createVideo = await Videos.create(dbVideos); // Use async/await here
